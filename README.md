@@ -22,10 +22,12 @@ npm start
 
 ## GitHub 更新与版本发布
 
-首次登录 GitHub 后，可用下面的命令创建私有仓库并推送当前工程：
+项目仓库：[LiuAoer/GNSS_Track](https://github.com/LiuAoer/GNSS_Track)。新电脑可先克隆工程：
 
 ```sh
-gh repo create satellite-realtime-distribution --private --source=. --remote=origin --push
+git clone https://github.com/LiuAoer/GNSS_Track.git
+cd GNSS_Track
+npm ci
 ```
 
 日常修改完成后，用以下命令提交并同步到 GitHub。仓库推送到 `main` 或提交 Pull Request 后会自动运行单元测试、Chrome 浏览器测试和生产构建；也可先在分支上开发，再通过 Pull Request 合并。
